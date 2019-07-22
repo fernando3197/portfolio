@@ -2,18 +2,16 @@ body{
     overflow-x: hidden;
     background-color: rgb(151, 170, 68);
 }
-.intro{
-    margin-top: 120px;
-}
+
 .header{
     position: fixed;
     top: 0px;
     left: 0px;
+    background-color: rgb(151, 170, 68);
 }
 .header__container{
     display: grid;
-    background-color: rgb(69, 135, 209);
-    grid-template-columns: repeat(10, 10vw);
+    grid-template-columns: repeat(10, 9.9vw);
     grid-template-rows: 100px;
     align-items: center;
 }
@@ -28,7 +26,9 @@ body{
     grid-column: 1/2;
 }
 .header__block--title{
-    grid-column: 2/5
+    justify-content: left;
+    grid-column: 2/5;
+    color: rgb(78, 36, 105);
 }
 
 .header__block1{
@@ -43,13 +43,29 @@ body{
 .header__block4{
     grid-column: 10/11;
 }
+
+
+@keyframes header__a--animation{
+    0%{
+        color: red;
+        background-color: rgb(151, 170, 68);
+    }
+
+    100%{
+        color: blue;
+        background-color: rgb(185, 197, 131);
+    }
+}
 .header__a {
     text-decoration: none;
     color: black;
     font-size: 25px;
 }
 .header__a:hover{
-    background-color: rgb(27, 129, 189);
+    animation-name: header__a--animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;  
+    /*background-color: rgb(27, 129, 189); */
 }
 .header__icon{
     height: 100px;
@@ -59,8 +75,51 @@ body{
     font-size: 25px;
     text-align: center;
     height: auto;
+    font-weight: 1000;
+}
+.intro{
+    margin-top: 100px;
+}
+.intro__banner{
+    width: 100vw;
+    margin-left: -10px;
+}
+.intro__p{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(37, 6, 58);
 }
 
+.intro__hr{
+    border-color: black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: rgb(176, 104, 224);
+}
+@keyframes portfolio__image--animation{
+    0%{
+    }
+
+    20%{
+        box-shadow: 0px 0px 25px rgb(5, 75, 141);
+    }
+    70%{
+        box-shadow: 0px 0px 25px rgb(5, 75, 141);
+        box-shadow: 0px 0px 50px rgb(84, 164, 240);
+    }
+    100%{
+        box-shadow: 0px 0px 25px rgb(5, 75, 141);
+        box-shadow: 0px 0px 50px rgb(84, 164, 240);
+        box-shadow: 0px 0px 100px rgb(144, 192, 236);
+    }
+}
+
+.portfolio__a:hover{
+    animation-name: portfolio__image--animation;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
 .portfolio__container{
     display: grid;
     grid-template-columns: repeat(10, 10vw);
@@ -72,6 +131,11 @@ body{
 .portfolio__image{
     width: 20vw;
     height: 20vw;
+}
+.portfolio__image:hover{
+    animation-name: portfolio__image--animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 .portfolio__image1{
     grid-column: 2/4;
@@ -99,9 +163,27 @@ body{
     grid-row: 2/3;
 }
 .portfolio__h1{
-    color: gray; 
+    color: rgb(68, 9, 107);
     text-align: center;
 }
+
+.contact__h2{
+    text-align: center; 
+    color: rgb(68, 9, 107);
+}
+.contact__container{
+    display: grid;
+    grid-template-columns: 100vw; 
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer__h1{
     text-align: center;
 }
