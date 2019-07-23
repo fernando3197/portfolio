@@ -36,7 +36,7 @@
   </div>
 </div>
 
-<div class="intro">
+<div class="intro" id="intro">
   <img class="intro__banner" src="https://cdn.pixabay.com/photo/2015/11/02/18/34/banner-1018818_960_720.jpg" />
   <p class="intro__p">
     Web Design Professional.
@@ -81,44 +81,61 @@
     If you would like to communicate with me, please reach out by email.
   </h2>
 
-  <a class="contact__a" name="contact" />
   <div class="contact__container">
-    <form class="contact__form">
-      <input class="contact__input" placeholder="Name" /><br><br>
-      <input class="contact__input" placeholder="Email Address" /><br><br>
-      <input class="contact__input" placeholder="Phone Number" /><br><br>
-      <input class="contact__input  " placeholder="Message" />
-      <input class="contact__input" type="button" value="Submit" onclick="submitNotWorking();" />
+    <form class="contact__form" action="https://www.facebook.com">
+      <input class="contact__input contact__name" type="text" contact__input" placeholder="Name" name="name">
+      <input class="contact__input contact__email" type="email" contact__input" placeholder="Email Address"
+        name="email" />
+      <input class="contact__input contact__phone" type="tel" contact__input" placeholder="Phone Number" name="phone" />
+      <input class="contact__input contact__message" type="text" contact__input " placeholder=" Message"
+        name="message" />
+
+      <input class="contact__submit" type="submit" contact__input" type="button" value="Submit" />
     </form>
   </div>
-  <a class="contact__a">
-    BACK TO TOP
-  </a>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="spring--back">
+    <a class="spring--back" href="#intro">
+
+      BACK TO TOP OF PAGE
+    </a>
+  </div>
 </div>
 
+<hr class="ending__hr" />
+
 <div class="footer">
-  <div class="footer__container">
+  <div class="footer__container footer__notes">
     <h3 class="footer__h3"> <b>About This Page</b><br>
       Made with lots of love by<br>
       Fernando Gonzalez
   </div>
-  <div class="footer__container">
-    <p class="footer__p">
-      Around the Web
-    </p>
-
-    <a class="footer__a footer__facebook" href="https://www.facebook.com/">
-      Facebook
-    </a>
-
-    <a class="footer_a footer_instagram" href="https://www.instagram.com/">
-      Instagram
-    </a>
-    <a class="footer_a footer_twitter" href="https://www.twitter.com/">
-      Twitter
-    </a>
-    <a class="footer_a footer_snapchat" href="https://www.snapchat.com/">
-      Snapchat
-    </a>
+  <div class="footer__container footer__social">
+    <div class="footer__div">
+      <a class="footer__a  footer__facebook" href="https://www.facebook.com/" target="_blank">
+        <img class="footer__icon" src="https://www.freeiconspng.com/uploads/official-facebook-icon-png-4.png">
+      </a>
+    </div>
+    <div class="footer__div">
+      <a class="footer__a footer__instagram" href="https://www.instagram.com/" target="_blank">
+        <img class="footer__icon"
+          src="https://www.freepngimg.com/thumb/logo/62372-computer-neon-instagram-icons-hd-image-free-png.png">
+      </a>
+    </div>
+    <div class="footer__div">
+      <a class="footer__a  footer__twitter" href="https://www.twitter.com/" target="_blank">
+        <img class="footer__icon"
+          src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-512.png">
+      </a>
+    </div>
+    <div class="footer__div">
+      <a class="footer__a footer__snapchat" href="https://www.snapchat.com/" target="_blank">
+        <img class="footer__icon" src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c536.png">
+      </a>
+    </div>
   </div>
 </div>
